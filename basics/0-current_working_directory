@@ -1,2 +1,4 @@
 #!/bin/bash
-/tmp$ pwd
+0-current_working_directory
+$ realpath basics
+/shell/william0863/basics
