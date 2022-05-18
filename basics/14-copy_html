@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -v basics/*.html shell
+cp --attributes-only
