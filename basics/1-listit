@@ -1,0 +1,2 @@
+#!/bin/bash 
+\nfind ~/shell/basics/ -type f
