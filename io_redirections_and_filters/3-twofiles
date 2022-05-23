@@ -1,2 +1,2 @@
 #!/bin/bash
-ls passwd hosts
+ls -- passwd hosts
