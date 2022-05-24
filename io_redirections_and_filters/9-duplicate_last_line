@@ -1,2 +1,2 @@
 #!/bin/bash
-grep French iacta > iacta
+tail -1 > iacta
