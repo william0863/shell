@@ -1,2 +1,2 @@
 #!/bin/bash
-grep French iacta | tail -1 iacta
+grep French iacta | tail -1 iacta | sort -r
