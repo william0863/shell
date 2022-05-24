@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Nolt | head -10
+ls -Noxt1 | head -10
