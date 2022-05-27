@@ -1,2 +1,2 @@
 #!/bin/bash
-find -depth -name "*.gif" -type f -printf %fn | rev | cut -f1 -d "." --complement | rev | sort --version-sor -f
+find -depth -name "*.gif" -type f -printf '%f\n' | rev | cut -f1 -d "." --complement | rev | sort --version-sor -f
