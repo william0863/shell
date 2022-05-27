@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1aRGg | find /* -type d,f -empty | cut -d: -f9
+find ./ -type d,f -empty -printf %f
