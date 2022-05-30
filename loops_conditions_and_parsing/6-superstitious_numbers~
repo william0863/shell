@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script will display numbers from 1 to 20 with specific conditions in it. By using while and case.
+x=0
+while [ $x -lt 20 ]
+do x=$((x+1))
+
+   case "$x" in
+       [ $x -eq 4 ]
+       echo "bad luck from China";;
+
+       [ $x -eq 9 ]
+       echo "back luck from Japan";;
+
+       [ $x -eq 17 ]
+       echo "back luck from Italy";;
+
+   done
+       
