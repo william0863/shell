@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This script will display Best School 10times except for 4th and 8th line. By using if, else, elif and while
+x=0
+while [ $x -le 10 ]
+do x=$((x+1))
+if [ $x -eq 4 ]
+then echo "bad luck"
+elif [ $x -eq 8 ]
+then echo "good luck"
+else
+    echo "Best School"
+fi
+done
