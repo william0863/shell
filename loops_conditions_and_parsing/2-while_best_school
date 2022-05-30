@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
 # This script will write Best School 10times using while.
-COUNTER=0 ; while [  $COUNTER -lt 10 ] ; do echo Best School $COUNTER ; let COUNTER=COUNTER+1 ; done
+x=1
+while [ $x -le 10 ]
+do
+    echo "Best School"
+    x=$(( $x + 1 ))
+done
+
 
