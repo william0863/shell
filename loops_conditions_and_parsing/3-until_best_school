@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script will write Best School 10times using until.
 x=1
-until [ $x -eq 10 ]
+until [ $x -eq 11 ]
 do
   echo "Best School"
   x=$(( x+1 ))
