@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script will write Best School 10times using while.
-export kirikou=Best School
-while kirikou in {1..10} ; do echo "Best School" ; done
+COUNTER=0 ; while [  $COUNTER -lt 10 ] ; do echo Best School $COUNTER ; let COUNTER=COUNTER+1 ; done
+
