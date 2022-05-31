@@ -4,5 +4,5 @@
 
 export x=kirikou
 for x in *;
-do find ./ | cut -d "-" -f2
+do find ./ -not -path '*/.*' type -f | cut -d "-" -f2
 done
