@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script will display the content of the current directory in a list format
+# Using for, and without displaying hidden files
+
+x=kirikou
+for x in *;
+do ls -l | cut -d "-" -f2
+done
