@@ -5,19 +5,24 @@
 x="school"
 
 if [ -e $x ]
-then  echo "school file exists"
+then  echo "$x file exists"
 
-elif [ ! -e $x ]
-then echo "school file does not exist"
+if [ ! -e $x ]
+then echo "$x file does not exist"
 
-elif [ ! -s $x ]
-then echo "school file is empty"
+if [ ! -s $x ]
+then echo "$x file is empty"
 
-elif [ -s $x ]
-then echo "school file is not empty"
+if [ -s $x ]
+then echo "$x file is not empty"
 
-elif [ -f $x ]
-then echo "school is a regular file"
+if [ -f $x ]
+then echo "$x is a regular file"
 
 else [ ! -f $x ] :
 fi
+fi
+fi
+fi
+fi
+
