@@ -4,25 +4,15 @@
 
 x="school"
 
-if [ -e $x ]
-then  echo "$x file exists"
+if [ -e "$x" ]
+then echo "$x file exists"
+     if [ -s "$x" ]
+     then echo "$x is not empty"
+     else echo "$x file is empty"
+     fi
 
-if [ ! -e $x ]
-then echo "$x file does not exist"
-
-if [ ! -s $x ]
-then echo "$x file is empty"
-
-if [ -s $x ]
-then echo "$x file is not empty"
-
-if [ -f $x ]
-then echo "$x is a regular file"
-
-else [ ! -f $x ] :
+     if [ -f "$x" ]
+     then echo "$x is a regular file"
+     fi
+else echo "$x file does not exist"
 fi
-fi
-fi
-fi
-fi
-
