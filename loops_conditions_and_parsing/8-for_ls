@@ -2,7 +2,9 @@
 # This script will display the content of the current directory in a list format
 # Using for, and without displaying hidden files
 
-export x=kirikou
-for x in *;
-do find ./ -type d -path '*/.*' -prune -o -not -name '.*' -type f | cut -d "-" -f2 | cut -d "." -f3
+x="$(ls)"
+for x in $x;
+do
+    echo "$x" | cut -d "-" -f2
+
 done
