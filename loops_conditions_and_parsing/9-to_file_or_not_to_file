@@ -7,7 +7,7 @@ x="school"
 if [ -e "$x" ]
 then echo "$x file exists"
      if [ -s "$x" ]
-     then echo "$x is not empty"
+     then echo "$x file is not empty"
      else echo "$x file is empty"
      fi
 
