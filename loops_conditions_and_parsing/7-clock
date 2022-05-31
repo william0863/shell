@@ -2,10 +2,10 @@
 # This script will display the time for 12hours and 59minutes.
 
 h=0
-x=1
 while [ "$h" -le 12 ]
 do echo "Hour: $h"
    (( h++ ))
+   x=1
    while [ "$x" -le 59 ]
 	 do echo "$x"
 	    (( x++ ))
