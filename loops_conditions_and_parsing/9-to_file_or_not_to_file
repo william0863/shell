@@ -14,5 +14,7 @@ then echo "$x file exists"
      if [ -f "$x" ]
      then echo "$x is a regular file"
      fi
+elif [ !-f "$x" ]
+     then :
 else echo "$x file does not exist"
 fi
