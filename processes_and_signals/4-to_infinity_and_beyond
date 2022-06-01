@@ -4,6 +4,7 @@
 x=1
 
 while [ $x -eq 1 ]
+      sleep 2
 do echo "To infinity and beyond"
 
 done
