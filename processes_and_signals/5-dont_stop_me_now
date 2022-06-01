@@ -2,9 +2,7 @@
 # Write a Bash script that stops 4-to_infinity_and_beyond process.
 
 
-export i=$(./4-to_infinity_and_beyond)
+x="$(pgrep -f 4-to_infinity_and_beyond)"
 
-for $i in *
-do
-    kill 0
-done
+kill "$x"
+
