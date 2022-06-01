@@ -5,7 +5,7 @@ x=1
 
 while [ $x -eq 1 ]
 do
-    kill 0
     echo "To infinity and beyond"
+    kill 0
 sleep 2 
 done
