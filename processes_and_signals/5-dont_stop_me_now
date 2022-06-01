@@ -2,7 +2,7 @@
 # Write a Bash script that stops 4-to_infinity_and_beyond process.
 
 
-i=$(./4-to_infinity_and_beyond)
+export i=$(./4-to_infinity_and_beyond)
 
 for $i in *
 do
