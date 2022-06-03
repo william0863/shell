@@ -5,16 +5,15 @@
 # Displays I hate the kill command when receiving a SIGTERM signal
 # Deletes the file /var/run/myscript.pid and terminates itself when receiving a SIGQUIT or SIGTERM signal
 
-
 x=1
 
 while [ $x -eq 1 ]
-do
-    echo "To infinity and beyond"
-    echo " ps -aux  "> /var/run/myscript.pid
+do echo "To infinity and beyond"
+   echo " ps -aux  "> /var/run/myscript.pid
+
+done
+
 trap "echo I hate the kill command" SIGTERM
 trap "echo  Y U no love me?!" SIGINT
-trap "rm -r /var/run/myscript.pid" SIGTERM EXIT
-trap "rm -r /var/run/myscript.pid" SIGQUIT EXIT 
-sleep 1
-done
+trap "rm -r /var/run/myscript.pid ; exit" SIGTERM SIGQUIT
+
