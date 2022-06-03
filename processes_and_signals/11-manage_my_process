@@ -24,16 +24,16 @@ startLoop_n_createFile()
  
  case "$argv1" in
      start) echo "manage_my_process started"
- startLoop_n_createFile
- ;;
+	    startLoop_n_createFile
+	    ;;
      stop) echo "manage_my_process stopped"
- killLoop_n_rmFile
- ;;
+	   killLoop_n_rmFile
+	   ;;
      restart) echo "manage_my_process restarted"
- killLoop_n_rmFile
- startLoop_n_createFile
- ;;
+	      killLoop_n_rmFile
+	      startLoop_n_createFile
+	      ;;
  *) echo "Usage: manage_my_process {start|stop|restart}"
- ;;
+    ;;
 	esac
 
