@@ -4,15 +4,18 @@
 # In between every I am alive! message, the program should pause for 2 seconds
 # Write Bash (init) script 11-manage_my_process that manages manage_my_process. (both files need to be pushed to git)
 
-if [ "$1" == "start" ]; then
+if [ "$1" == "start" ];
+then
     ./manage_my_process &
     echo "$!" > /var/run/my_process.pid
     echo "manage_my_process started"
-elif [ "$1" == "stop" ]; then
+elif [ "$1" == "stop" ];
+then
     kill "$(cat /var/run/my_process.pid)"
     rm -f /var/run/my_process.pid
     echo "manage_my_process stopped"
-elif [ "$1" == "restart" ]; then
+elif [ "$1" == "restart" ];
+then
     kill "$(cat /var/run/my_process.pid)"
     rm -f /var/run/my_process.pid
     ./manage_my_process &
