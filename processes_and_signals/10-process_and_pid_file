@@ -7,15 +7,16 @@
 
 x=1
 
-trap "rm -r /var/run/myscript.pid ; exit" SIGTERM SIGQUIT
+
 trap "echo I hate the kill command" SIGTERM
 trap "echo  Y U no love me?!" SIGINT
-
+trap "rm /var/run/myscript.pid ; exit" SIGTERM
+trap "rm /var/run/myscript.pid ; exit" SIGQUIT
 
 while [ $x -eq 1 ]
 do echo "To infinity and beyond"
    echo " ps -aux  "> /var/run/myscript.pid
-
+sleep 2
 done
 
 
