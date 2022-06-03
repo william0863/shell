@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Write a Bash script that:
+# Creates the file /var/run/myscript.pid containing its PID
+# Displays To infinity and beyond indefinitely
+# Displays I hate the kill command when receiving a SIGTERM signal
+# Deletes the file /var/run/myscript.pid and terminates itself when receiving a SIGQUIT or SIGTERM signal
+
+
+x=1
+
+while [ $x -eq 1 ]
+do echo "To infinity and beyond"
+trap "echo I hate the kill command" SIGTERM
+trap "echo  Y U no love me?!" SIGINT
+sleep 1
+done
