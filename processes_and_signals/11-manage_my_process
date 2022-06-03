@@ -27,6 +27,7 @@ startLoop_n_createFile()
 	    startLoop_n_createFile
 	    ;;
      stop) echo "manage_my_process stopped"
+	   rm -f /var/run/my_process.pid
 	   killLoop_n_rmFile
 	   ;;
      restart) echo "manage_my_process restarted"
